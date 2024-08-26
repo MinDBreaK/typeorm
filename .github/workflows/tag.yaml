@@ -18,7 +18,7 @@ jobs:
                   scope: "@MinDBreaK"
             - run: npm install
             - run: npm run package
-            - run: cd build/package
             - run: npm publish --provenance --access public
+              working-directory: build/package
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
