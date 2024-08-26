@@ -15,7 +15,7 @@ jobs:
               with:
                   node-version: '20.x'
                   registry-url: 'https://npm.pkg.github.com'
-                  scope: @MinDBreaK
+                  scope: "@MinDBreaK"
             - run: npm package
             - run: cd package
             - run: npm publish --provenance --access public
